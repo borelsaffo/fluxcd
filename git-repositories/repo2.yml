@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  url: https://github.com/my-org/my-repo.git
+  url: https://github.com/my-org2
   branch: main
   secretRef:
     name: git-credentials
