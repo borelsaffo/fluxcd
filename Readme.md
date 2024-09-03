@@ -20,3 +20,13 @@ source-controller
 
     gère les sources de configurations, telles que les dépôts Git ou les archives Helm, que Flux utilise pour déployer des applications. Il surveille ces sources pour détecter les changements et déclencher des déploiements en conséquence.
  
+
+
+
+
+
+# 
+
+flux create kustomization kusto-parent --sources=source1 --path=./ --prune=true --interval=5m --target-namespace=target-ns --namespace=flux-system
+ 
+flux create kustomization kusto-parent --source=source1 --path=./ --prune=true --interval=5m --target-namespace=target-ns --namespace=flux-system
